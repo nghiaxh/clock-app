@@ -12,7 +12,7 @@ setInterval(updateClockTime, 1000);
 
 function updateClockDate() {
   const updateClockDateNow = new Date();
-    const getDate = updateClockDateNow.toLocaleDateString( 'en-US' );
+  const getDate = updateClockDateNow.toLocaleDateString("en-US").toString().padStart(2, 0);
   document.getElementById("clock-date").textContent = getDate;
 }
 
